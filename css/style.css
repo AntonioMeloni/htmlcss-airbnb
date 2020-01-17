@@ -6,30 +6,46 @@
 }
 
 .container{
-    width: 500px;
-    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/06/minimalist-desktop-6.jpg);
+    background-size: cover;
     position: relative;
-    margin: 10px auto;
 }
 
-.città{
+.colonna{
+    width: 450px;
+    background-color: white;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%; /*Diminuendo la dimensione della finestra mangia la parte superiore*/
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* margin:3% auto; Si perde il centro verticale ma si visualizza tutto il contenuto*/
+}
+
+ .città{
+    height: 180px;
     margin: 10px;
     position: relative;
 }
 
 .overlay {
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(0,0,0,0.5);
+    border-radius: 7px;
 }
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top: 10px;
+    display: block;
+    border-radius: 7px;
+    position: absolute;
 }
 
 h2 {
@@ -40,4 +56,5 @@ h2 {
     transform: translate(-50%,-50%);
     color: white;
     font-size: 30px;
+    letter-spacing: 5px;
 }
